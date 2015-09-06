@@ -1,0 +1,180 @@
+/* font-family: 'Playfair Display', serif;
+font-family: 'Oswald', sans-serif; */
+
+html {
+    background-color: #f4f4f4;
+    font-family: 'Oswald', sans-serif;
+}
+
+.wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 900px;
+    position: relative;
+}
+
+header {
+    background-color: #01be90;
+    color: white;
+    width: 100%;
+    overflow: hidden;
+}
+
+footer {
+    background-color: #01be90;
+    clear: both;
+    color: white;
+    width: 100%;
+}
+
+    footer p {
+        font-family: 'Oswald', sans-serif;
+        font-size: .75em;
+        line-height: 200%;
+    }
+
+.container {
+    background: white;
+    border: 2px solid #01be90;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+    @media (min-width: 768px) {
+        .container {
+            background-image: -webkit-linear-gradient(left, white 75%, #f7f7f7 75%, #f7f7f7 100%);
+            background-image: linear-gradient(left, white 75%, #f7f7f7 75%, #f7f7f7 100%);
+        }
+    }
+
+.col1 {
+    float: left;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+    @media (min-width: 768px) {
+        .col1 {
+            width: 75%
+        }
+    }
+
+.col2 {
+    float: left;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+    @media (min-width: 768px) {
+        .col2 {
+            width: 25%
+        }
+    }
+
+.nav1 li {
+    text-transform: uppercase;
+}
+
+.nav1 ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*Nav to dropdown on small screens*/
+
+.nav1 li {
+    display: none;
+}
+
+#menu {
+    float: left;
+    min-height: 44px;
+    min-width: 44px;
+}
+
+    #menu:hover li, #menu:active li {
+        display: block;
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    #menu p {
+        font-family: 'Oswald', sans-serif;
+    }
+
+/*Nav inline on larger screens*/
+
+@media (min-width: 768px) {
+    #menu {
+        background: none;
+        float: left;
+        min-height: 0;
+        min-width: 0;
+    }
+
+        #menu p {
+            display: none;
+        }
+
+    .nav1 li, #menu:hover li, #menu:active li {
+        display: inline;
+        margin-right: 8px;
+        position: relative;
+    }
+}
+
+
+.nav1 a:link, .nav1 a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.nav1 a:hover, .nav1 a:active {
+    color: white;
+    text-decoration: underline;
+}
+
+.pad-sm {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.pad-md {
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4em;
+    line-height: 100%;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1em;
+}
+
+a {
+    font-family: 'Oswald', sans-serif;
+}
+
+    a:link {
+        color: black;
+    }
+
+    a:visited {
+        color: #909090;
+    }
+
+    a:hover, a:active {
+        color: #01be90;
+    }
