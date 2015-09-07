@@ -95,7 +95,7 @@ footer {
     min-width: 44px;
 }
 
-    #menu:hover li, #menu:active li {
+    #menu:hover li, #menu:focus li, #menu:active li {
         display: block;
         min-height: 44px;
         min-width: 44px;
